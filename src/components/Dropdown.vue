@@ -4,7 +4,8 @@
       href="#"
       class="btn btn-outline-light my-2 dropdown-toggle"
       @click.prevent="toggleOpen"
-      >{{ title }}
+    >
+      {{ title }}
     </a>
     <ul class="dropdown-menu" :style="{ display: 'block' }" v-if="isOpen">
       <slot></slot>
